@@ -1,0 +1,1 @@
+0 12 * * 3	/opt/geoip/update_geoip.sh

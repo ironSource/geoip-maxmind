@@ -1,0 +1,8 @@
+geoip:
+  build: .
+  volumes:
+      - .:/opt/geoip
+  environment:
+    GEOIP_LOCAL_DIR: /usr/share/GeoIP/
+  working_dir: /opt/geoip
+  command: py.test test/test_geoip.py
